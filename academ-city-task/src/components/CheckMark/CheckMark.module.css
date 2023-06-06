@@ -1,0 +1,24 @@
+.main {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.text {
+  margin: 0 0 0 10px;
+  width: fit-content;
+}
+@media (max-width: 639px) {
+  .outline {
+    margin-right: 10px;
+    margin-right: 20px;
+  }
+  .text {
+    width: 80%;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+}

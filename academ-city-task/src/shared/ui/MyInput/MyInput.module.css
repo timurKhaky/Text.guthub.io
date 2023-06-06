@@ -1,0 +1,31 @@
+.place_holder {
+  color: rgba(44, 36, 36, 0.5);
+  z-index: 100;
+  left: 10px;
+  cursor: text;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  display: none;
+}
+.placeinput input:invalid + .place_holder {
+  display: inline;
+}
+.placeinput {
+  padding: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.placeinput input {
+  height: 47px;
+  outline: none;
+  border: none;
+}
+.standart {
+  background: #eeefef;
+  border-radius: 10px;
+  width: 100%;
+  font-size: medium;
+  padding-left: 10px;
+}

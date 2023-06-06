@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.main button {
+  border: 0;
+  background: #2e9f9f;
+  border-radius: 50%;
+  color: white;
+  margin: 0 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+}

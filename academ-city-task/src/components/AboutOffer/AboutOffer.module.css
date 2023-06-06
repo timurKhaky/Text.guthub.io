@@ -1,0 +1,175 @@
+.main {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.main::after {
+  margin-top: 20px;
+  content: "";
+  height: 1px;
+  background-color: rgba(217, 217, 217, 0.5);
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: #2e9f9f;
+  max-width: 360px;
+}
+
+.discount {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px 15px;
+  background: #2e9f9f;
+  border-radius: 5px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.discount b {
+  margin-left: 10px;
+}
+
+.about_price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 22px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.old_price {
+  text-align: end;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.old_price strike {
+  color: #c4c3c3;
+  margin-right: 20px;
+  font-size: 28px;
+}
+
+.new_price {
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 76px;
+  color: #272727;
+  line-height: 1;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .main::after {
+    content: none;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 640px) {
+  .mobile {
+    display: none;
+  }
+  .main {
+    height: fit-content;
+    max-width: 640px;
+    background: transparent;
+    padding: 0 20px;
+  }
+
+  .about_price {
+    margin: 0 0 30px;
+  }
+
+  .old_price {
+    font-size: 14px;
+  }
+
+  .old_price strike {
+    font-size: 18px;
+  }
+
+  .new_price {
+    font-size: 42px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 639px) {
+  .main {
+    height: fit-content;
+    max-width: 100%;
+    background: transparent;
+    padding: 15px;
+  }
+  .header {
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  .header :first-child {
+    font-size: 18px;
+    width: 50%;
+    align-items: center;
+  }
+  .header :last-child {
+    margin: 0;
+    padding: 15px;
+    height: fit-content;
+    width: fit-content;
+  }
+  .about_price {
+    justify-content: space-around;
+  }
+  .text {
+    font-size: 18px;
+    width: 50%;
+  }
+  .new_price {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  .old_price,
+  .old_price strike {
+    font-size: 12px;
+  }
+
+  .old_price strike {
+    margin-right: 5px;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
